@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+  .box {
+  background-color: white;
+  width: 50%;
+  border: 20px solid blue;
+  padding: 2%;
+  margin: auto;
+  text-align: center;
+}
+body {
+ background-image: url("https://ia800204.us.archive.org/19/items/2014-02-12Bigwords/DSC_0044rs1.JPG?cnt=0")
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 35px
+}
+h2 {
+  color: blue;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 900;
+  font-family: Open Sans;
+
+}
+h3 {
+  color: #FF0000;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+    font-family: Open Sans;
+}
+.bold {
+ font-weight: 900;
+}
+.red  {
+  color: #FF0000;
+}
+.blue {
+  color: #0000FF;
+}
+p {
+  font-family: Open Sans;
+  font-size: 20px;
+}
+</style>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Team Cirrus Professionals Website</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+</head>
+<body>
+  <div>
+      <h1>Welcome to<br /> <span class="bold red"> Cirrus Professional's Totally Professional </span><br /> and <span class="blue">Not at all Rudimentary</span> <br />Application</h1>
+    {{{body}}}
+    </div>
+<div class=box>
+  <h3>Add an event</h3><br />
+    <form action="/event" method="post">
+       Name Your Event: <input name="title" type="text" /> <br /><br />
+       Describe Your Event: <input name="description" type="text" /> <br /><br />
+       Where will it be?: <label for="location" type="text" /></label> <br />
+       
+       
+<select name="location" id="location">
+  <option value="home">Home Office</option>
+  <option value="uptown">Uptown</option>
+  <option value="northside">Northside</option>
+  <option value="virtual">Virtual</option>
+</select>
+<br /><br />
+<label for="start">When are you thinking? :</label> <br />
+
+<input type="date" id="start" name="trip-start"
+       value="2022-10-21"
+       min="2022-01-01" max="2024-12-31">
+
+       <br /><br />
+        <input type="submit" name="submit" value="submit" />
+    </form>
+  </div>
+</body>
+</html>
